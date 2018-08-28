@@ -1,0 +1,38 @@
+{
+  "description": "Find-a-Way Solver",
+  "scripts": {
+    "build": "eslint src & webpack-cli && npm run start",
+    "start": "http-server dist",
+    "#": "-o => open page"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.9.1",
+    "file-loader": "^2.0.0",
+    "http-server": "^0.11.1",
+    "webpack": "^4.8.3"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "license": "UNLICENSED",
+  "name": "find-a-way",
+  "version": "1.0.0",
+  "main": "script.js",
+  "author": "Denis Howe"
+}
