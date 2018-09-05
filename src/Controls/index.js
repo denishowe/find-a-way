@@ -1,4 +1,4 @@
-import Input from "../Input";
+import Input from "./Input";
 import React from "react";
 
 // Display controls for grid size and number of blocks
