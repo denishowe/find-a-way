@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ucFirst } from "../Utils";
+import { ucFirst } from "../../Utils";
 
 // An input with a type and a label
 
