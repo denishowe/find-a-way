@@ -29,7 +29,6 @@ module.exports = {
 		"arrow-spacing": "error",
 		"block-scoped-var": "error",
 		"block-spacing": "error",
-		"brace-style": ["error", "allman", { "allowSingleLine": true }],
 		"callback-return": "error",
 		"camelcase": "error",
 		"capitalized-comments": "off",
@@ -107,6 +106,7 @@ module.exports = {
 		"no-caller": "error",
 		"no-catch-shadow": "error",
 		"no-confusing-arrow": "error",
+		"no-console": "off",
 		"no-continue": "error",
 		"no-div-regex": "error",
 		"no-duplicate-imports": "error",
@@ -222,12 +222,7 @@ module.exports = {
 		"require-await": "error",
 		"require-jsdoc": "error",
 		"rest-spread-spacing": "error",
-		"semi": ["error", "always", { "omitLastInOneLineBlock": true }],
 		"semi-spacing": "error",
-		"semi-style": [
-			"error",
-			"last"
-		],
 		"sort-imports": "error",
 		"sort-keys": "off",
 		"sort-vars": "error",
