@@ -32,7 +32,7 @@ class App extends React.Component
 			<div>
 				<Controls width = { width } height = { height }
 					blocks = { blocks } setter = { setter } />
-				<Maze />
+				<Maze width={ width } height={ height } blocks={ blocks } />
 			</div>
 		);
 	}
