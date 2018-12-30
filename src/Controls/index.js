@@ -5,18 +5,18 @@ import React from "react";
 
 class Controls extends React.Component
 {
-	render()
-	{
-		const { width, height, blocks, setter } = this.props;
+    render()
+    {
+        const { width, height, blocks, setter } = this.props;
 
-		return (
-			<div>
-				<Input type="number" id="width"  value={ width  } setter={ setter } />
-				<Input type="number" id="height" value={ height } setter={ setter } />
-				<Input type="number" id="blocks" value={ blocks } setter={ setter } />
-			</div>
-		);
-	}
+        return (
+            <div style={{ height: "30px" }}>
+                <Input type="number" id="width"  value={ width  } setter={ setter } />
+                <Input type="number" id="height" value={ height } setter={ setter } />
+                <Input type="number" id="blocks" value={ blocks } setter={ setter } />
+            </div>
+        );
+    }
 }
 
 export default Controls;
