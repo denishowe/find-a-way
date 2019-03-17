@@ -1,6 +1,6 @@
 module.exports =
 {
-	mode: "development",	// default production
+	mode: "development", // default production
 	module:
 	{
 		rules:
@@ -18,5 +18,5 @@ module.exports =
 			}
 		]
 	},
-    watch: true
+  watch: true
 };
