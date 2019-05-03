@@ -9,12 +9,21 @@ export default class MazeModel {
     this.addBlocks(blockCount);
   }
 
+  newBlock() {
+    let block;
+    do {
+      block = new Block(this);
+    } while (this.blocks.find(block.isEqual));
+
+    return block;
+  }
+
   addBlocks(num) {
     while (this.blocks.length < num) {
       let blk = null;
       do {
         blk = new Block(this);
-      } while (this.blocks.find(b => blk.isEqual(b)));
+      } while (this.blocks.find(blk.isEqual));
       this.blocks.push(blk);
     }
   }

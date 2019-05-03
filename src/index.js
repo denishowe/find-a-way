@@ -1,5 +1,5 @@
 import App from './components';
 
-require('file-loader?name=[name].[ext]!./index.html');
+require('./index.html');
 
 export default App;
