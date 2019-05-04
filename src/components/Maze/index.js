@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react';
-import { object } from 'prop-types';
+import { integer, shape } from 'prop-types';
 
 /* A maze consist of a grid of points, some of which contain blocks. */
 
@@ -17,7 +17,7 @@ export default class Maze extends Component {
     const { maze } = this.props;
     const { width, height, blocks } = maze;
 
-    console.log('blocks', blocks);
+    console.log('blocks', blocks); // eslint-disable-line no-console
 
     const canvas = this.canvasRef.current;
     const context = canvas.getContext('2d');
@@ -29,7 +29,7 @@ export default class Maze extends Component {
 
     // Fit block array to canvas
     const blockSize = Math.min(canvas.width / width, canvas.height / height);
-    console.log('size', blockSize);
+    console.log('size', blockSize); // eslint-disable-line no-console
 
     context.beginPath();
     const xStart = 0; const
@@ -53,5 +53,9 @@ export default class Maze extends Component {
 }
 
 Maze.propTypes = {
-  maze: object,
+  maze: shape({
+    width: integer.isRequired,
+    height: integer.isRequired,
+    blocks: integer.isRequired,
+  }).isRequired,
 };

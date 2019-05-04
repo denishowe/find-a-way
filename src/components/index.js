@@ -48,3 +48,5 @@ class App extends Component {
 }
 
 render(<App />, document.getElementById('root'));
+
+export default App;

@@ -41,5 +41,8 @@ export default class Input extends Component {
 }
 
 Input.propTypes = {
-  id: string, setter: func, type: string, value: string,
+  id: string.isRequired,
+  setter: func.isRequired,
+  type: string.isRequired,
+  value: string.isRequired,
 };
