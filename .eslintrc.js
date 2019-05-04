@@ -21,5 +21,6 @@ module.exports = {
   "rules": {
     "jsx-a11y/label-has-for": "off",
     "no-plusplus": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
   }
 };

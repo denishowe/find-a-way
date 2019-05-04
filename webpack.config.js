@@ -1,8 +1,7 @@
 module.exports = {
-  mode: 'development', // default production
-  module:
-  {
-    output: { path: `${__dirname}/build` },
+  mode: 'development', // default: production
+  output: { path: `${__dirname}/build` },
+  module: {
     rules:
     [
       {
@@ -12,7 +11,7 @@ module.exports = {
         [
           {
             loader: 'babel-loader',
-            options: { presets: ['env', 'react'] },
+            options: { presets: ['@babel/preset-env', '@babel/preset-react'] },
           },
         ],
       },
