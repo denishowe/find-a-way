@@ -21,10 +21,11 @@
     "build"
   ],
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.0.5",
+    "eslint": "^7.7.0",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "http-server": "^0.12.3"
@@ -33,7 +34,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.3.2",
     "react-dom": "^16.7.0",
-    "styled-components": "^4.0.3"
+    "styled-components": "^5.1.1"
   },
   "repository": {
     "type": "git",
