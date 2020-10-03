@@ -1,6 +1,7 @@
 {
   "description": "Find-a-Way Solver",
   "scripts": {
+    "clean": "rm -rf dist node_modules",
     "install": "npm install --global eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jest eslint-plugin-react jest nodemon webpack webpack-cli webpack-dev-server; npm install --save-dev @babel/core @babel/preset-env @babel/preset-react",
     "test": "nodemon --watch ./src --ext js,jsx --exec npm run test:once",
     "test:once": "clear; eslint --fix . && jest --bail",
@@ -31,6 +32,7 @@
     "http-server": "^0.12.3"
   },
   "dependencies": {
+    "npm": "^6.14.8",
     "prop-types": "^15.7.2",
     "react": "^16.3.2",
     "react-dom": "^16.7.0",
