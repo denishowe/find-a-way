@@ -1,6 +1,9 @@
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+
+const html = new HtmlWebPackPlugin({ template: 'src/index.html' });
+
 module.exports = {
   mode: 'development', // default: production
-  output: { path: `${__dirname}/build` },
   module: {
     rules:
     [
@@ -15,8 +18,8 @@ module.exports = {
           },
         ],
       },
-      { test: /\.html$/, use: 'html-loader' },
+      { test: /\.html$/, loader: 'html-loader' },
     ],
   },
-  watch: true,
+  plugins: [html],
 };

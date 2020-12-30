@@ -20,11 +20,11 @@ export default class MazeModel {
 
   addBlocks(num) {
     while (this.blocks.length < num) {
-      let blk = null;
+      let newBlock = null;
       do {
-        blk = new Block(this);
-      } while (this.blocks.find(blk.isEqual));
-      this.blocks.push(blk);
+        newBlock = new Block(this);
+      } while (this.blocks.find(b => newBlock.isEqual(b)));
+      this.blocks.push(newBlock);
     }
   }
 

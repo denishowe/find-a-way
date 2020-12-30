@@ -1,4 +1,4 @@
-import { func, string } from 'prop-types';
+import { func, number, oneOfType, string } from 'prop-types';
 import React, { Component } from 'react';
 import { ucFirst } from '../../../utils';
 
@@ -44,5 +44,5 @@ Input.propTypes = {
   id: string.isRequired,
   setter: func.isRequired,
   type: string.isRequired,
-  value: string.isRequired,
+  value: oneOfType([string, number]).isRequired,
 };

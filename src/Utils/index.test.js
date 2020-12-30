@@ -11,7 +11,7 @@ describe('Utility functions', () => {
     for (let i = 0; i < count; i++) {
       rs.push(random(1, max));
     }
-    const good = rs.filter(r => r >= 1 && r <= max && Number.isInteger(r));
+    const good = rs.filter((r) => r >= 1 && r <= max && Number.isInteger(r));
     expect(good).toHaveLength(count);
   });
 

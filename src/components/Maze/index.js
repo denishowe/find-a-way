@@ -1,5 +1,6 @@
 import React, { Component, createRef } from 'react';
-import { integer, shape } from 'prop-types';
+import { arrayOf, instanceOf, number, shape } from 'prop-types';
+import Block from '../../model/block';
 
 /* A maze consist of a grid of points, some of which contain blocks. */
 
@@ -54,8 +55,8 @@ export default class Maze extends Component {
 
 Maze.propTypes = {
   maze: shape({
-    width: integer.isRequired,
-    height: integer.isRequired,
-    blocks: integer.isRequired,
+    width: number.isRequired,
+    height: number.isRequired,
+    blocks: arrayOf(instanceOf(Block)).isRequired,
   }).isRequired,
 };

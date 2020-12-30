@@ -1,4 +1,4 @@
-import { func, integer } from 'prop-types';
+import { func, number } from 'prop-types';
 import React from 'react';
 import Input from './Input';
 
@@ -15,10 +15,10 @@ const Controls = ({
 );
 
 Controls.propTypes = {
-  blocks: integer.isRequired,
-  height: integer.isRequired,
+  blocks: number.isRequired,
+  height: number.isRequired,
   setter: func.isRequired,
-  width: integer.isRequired,
+  width: number.isRequired,
 };
 
 export default Controls;
